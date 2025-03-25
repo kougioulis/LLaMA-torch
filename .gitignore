@@ -1,0 +1,55 @@
+# Compiled source
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Python bytecode files
+__pycache__/
+*.py[cod]
+*.pyc
+*$py.class
+
+# Python-specific files
+.Python
+.python-version
+
+# Virtual environments
+env/
+venv/
+ENV/
+.venv/
+.env/
+env.bak/
+venv.bak/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Other
+*.log
+*.pot
+__pycache__/
+*.py[cod]
+code/_py_cache__/*.pyc
+code/.vscode/launch.json
+
+# OS generated files 
+.DS_Store
+.DS_Store?
+._*
+.Trash
+ehumbs.db
+Thumbs.db
