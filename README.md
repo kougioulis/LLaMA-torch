@@ -1,6 +1,6 @@
 ## LLaMA-torch
 
-LLaMA-like [1] implementation in Pytorch with Grouped Multi-Query Attention instead of standard Multi-head Attention as in the original paper. Also includes RoPE embeddings, RMS normalization and SwiGLU activations. It purposely omits the SentencePiece tokenizer and model scaling configurations.
+LLaMA-like [touvron2023llama] implementation in Pytorch with Grouped Multi-Query Attention instead of standard Multi-head Attention as in the original paper. Also includes RoPE embeddings, RMS normalization and SwiGLU activations. It purposely omits the SentencePiece tokenizer and model scaling configurations.
 
 ## Usage
 
@@ -21,7 +21,7 @@ seq_length = 64
 input_tensor = torch.randint(low=0, high=n_tokens,
                              size=(batch_size, seq_length))
 
-model = LLAMA(d_model, n_tokens, n_layers, n_heads, n_kv_heads)
+model = LLaMA(d_model, n_tokens, n_layers, n_heads, n_kv_heads)
 
 output = model(input_tensor) # torch.Size([2, 64, 100])
 print(output.shape)
